@@ -80,7 +80,7 @@ export default class CreateExercises extends Component {
               value={this.state.username}
               onChange={this.onChangeUsername}
             >
-              {/* array of user from mongodb databases */}
+              {/* array of user from mongodb databases , map return ecah element in array*/}
               {this.state.users.map(function (user) {
                 return (
                   <option key={user} value={user}>
